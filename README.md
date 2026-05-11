@@ -226,7 +226,7 @@ Potential enhancements:
 # 👨‍💻 Author
 
 ## Carlton Turusida
-Full Stack Software Engineer
+UI/UX Designer & Frontend Developer
 
 - GitHub: https://github.com/carltonturusida
 - LinkedIn: https://linkedin.com/in/carltonturusida
