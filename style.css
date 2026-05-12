@@ -598,3 +598,63 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
   .blob { animation: none; }
 }
+
+/* ==========================================================
+   Bootstrap Mobile Overflow Fixes — ADDITIVE ONLY
+   These rules override the desktop `overflow: hidden` on body
+   so mobile users can scroll when the card is taller than the
+   viewport, and prevent horizontal bleed from the blobs.
+   No design, animation, or layout logic is changed.
+   ========================================================== */
+@media (max-width: 900px) {
+  /* Allow vertical scroll on mobile; keep horizontal locked */
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* auth-wrapper must fill at least the full viewport so the
+     card is always centred, but can grow if needed */
+  .auth-wrapper {
+    min-height: 100vh;
+    align-items: flex-start;        /* let card sit at top on tiny screens */
+    padding: 16px;
+  }
+
+  /* Ensure the card never bleeds past the viewport edge */
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Tighten form padding on narrow phones */
+  .form-box {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    padding: 12px;
+  }
+
+  /* Prevent blob overflow from creating horizontal scroll */
+  .bg-stage {
+    overflow: hidden;
+  }
+
+  /* Scale social icon row so it never overflows */
+  .social {
+    gap: 10px;
+  }
+  .social a {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Keep forgot row from wrapping awkwardly */
+  .forgot {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+}

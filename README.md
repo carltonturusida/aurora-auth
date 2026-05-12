@@ -1,12 +1,12 @@
 # Aurora Auth — Premium Animated Login & Signup UI
 
-A futuristic, fully animated **Login & Signup Interface** built with pure **HTML5, CSS3, and Vanilla JavaScript**.
+A futuristic, fully animated **Login & Signup Interface** built with pure **HTML5, CSS3, Vanilla JavaScript, and Bootstrap 5 (for responsive support) **.
 
 Inspired by the sleek UI aesthetics of modern platforms like Stripe, Linear, Vercel, Framer, and Apple, Aurora Auth combines glassmorphism, animated gradients, smooth transitions, and responsive layouts into a premium authentication experience.
 
 🌐 **Live Demo:** https://carltonturusida.github.io/aurora-auth/
 
-> No frameworks. No build tools. No dependencies. Just open `index.html` and run.
+> No frameworks for logic. No build tools. No dependencies. Bootstrap is only used for enhanced responsiveness. Just open `index.html` and run.
 
 ---
 
@@ -42,11 +42,13 @@ Inspired by the sleek UI aesthetics of modern platforms like Stripe, Linear, Ver
 - Password strength indicator with live feedback
 - Floating animated particles
 
-## 📱 Responsive Design
-- Desktop optimized
-- Tablet responsive
-- Mobile-friendly layout
-- Adaptive animations for smaller screens
+## 📱 Responsive Design (Improved with Bootstrap 5)
+- Desktop optimized layout (custom CSS system)
+- Tablet responsive layout
+- Mobile-friendly layout enhanced using **Bootstrap 5 utilities**
+- Better scaling and stacking on small screens
+- Improved spacing, alignment, and form responsiveness
+- Cross-device consistency improvements
 
 ## ♿ Accessibility
 - Semantic HTML structure
@@ -75,6 +77,7 @@ Inspired by the sleek UI aesthetics of modern platforms like Stripe, Linear, Ver
   - Backdrop-filter
   - Custom animations
 - Vanilla JavaScript (ES6+)
+- **Bootstrap 5 (responsive layout utilities only)**
 - Google Fonts
   - Space Grotesk
   - Inter
@@ -88,7 +91,7 @@ Inspired by the sleek UI aesthetics of modern platforms like Stripe, Linear, Ver
 ```bash
 aurora-auth/
 │
-├── index.html      # Main HTML structure
+├── index.html      # Main HTML structure (Bootstrap added for responsiveness)
 ├── style.css       # Styling, animations, responsive design
 ├── script.js       # Interactions and UI logic
 └── README.md       # Project documentation
@@ -169,7 +172,7 @@ The authentication container reacts to mouse movement with a dynamic radial glow
 |---|---|
 | Desktop | Split-screen animated panels |
 | Tablet | Simplified centered layout |
-| Mobile | Single-column stacked interface |
+| Mobile | Single-column stacked interface enchanced with Bootstrap utilities |
 
 ---
 
